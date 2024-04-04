@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .player {
+    width: 90%; /* Adjust width to desired size */
+    max-width: 800px; /* Maximum width to maintain aspect ratio */
+    height: 90vh; /* Adjust height to desired size */
+    max-height: 90vh; /* Maximum height to maintain aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  
