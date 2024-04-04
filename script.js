@@ -24,4 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
       video.src = fileURL;
     });
   });
-  
+// script.js
+
+//document.addEventListener("DOMContentLoaded", function() {
+//    const video = document.getElementById("video");
+//  
+//    // Check if a video source is provided
+//    if (video.src) {
+      // Remove the default message
+//      video.querySelector("p").remove();
+//    }
+//  });
+    
