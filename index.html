@@ -26,11 +26,6 @@
   const video = document.getElementById('video');
   const message = document.getElementById('message');
 
-  if (!video || !message) {
-    console.error('Video element or message element not found.');
-    return;
-  }
-
   video.addEventListener('dragover', function(event) {
     event.preventDefault();
     event.dataTransfer.dropEffect = 'copy';
