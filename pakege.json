@@ -1,9 +1,0 @@
-{
-    "name": "VPS Player",
-    "main": "index.html",
-    "window": {
-      "width": 800,
-      "height": 600
-    }
-  }
-  
