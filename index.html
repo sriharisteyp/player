@@ -6,6 +6,10 @@
   <title>VLC Player</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="VPS logo.png" type="image/png">
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 0917d26aad6c25eeae5a1b353829c3a2293e2685
 </head>
 <body>
   <div id="app">
@@ -19,6 +23,50 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
   <script src="script.js"></script>
+=======
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('video');
+  const message = document.getElementById('message');
+
+  video.addEventListener('dragover', function(event) {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'copy';
+  });
+
+  video.addEventListener('drop', function(event) {
+    event.preventDefault();
+    const file = event.dataTransfer.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+      video.src = event.target.result;
+      video.style.display = 'block';
+      message.style.display = 'none';
+      video.play(); // Ensure the video starts playing after loading
+    };
+
+    reader.readAsDataURL(file);
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (video.src) {
+      if (event.key === 'ArrowUp') {
+        video.volume = Math.min(video.volume + 0.1, 1);
+      } else if (event.key === 'ArrowDown') {
+        video.volume = Math.max(video.volume - 0.1, 0);
+      } else if (event.key === 'ArrowLeft') {
+        video.currentTime -= 5; // Move backward 5 seconds
+      } else if (event.key === 'ArrowRight') {
+        video.currentTime += 5; // Move forward 5 seconds
+      }
+    }
+  });
+});
+
+  </script>
+>>>>>>> 0917d26aad6c25eeae5a1b353829c3a2293e2685
 </body>
 </html>
